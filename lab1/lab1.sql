@@ -3,7 +3,6 @@
 CREATE DATABASE lab1;
 
 -- 2. Create table «users» with fields:
--- id (autoincrementing integer), firstname (string max length 50), lastname (string max length 50)
 CREATE TABLE users (
     id SERIAL,
     firstname VARCHAR(50),
@@ -23,7 +22,6 @@ ALTER TABLE users ALTER COLUMN isadmin SET DEFAULT FALSE;
 ALTER TABLE users ADD CONSTRAINT users_pkey PRIMARY KEY (id);
 
 -- 7. Create table «tasks» with fields:
--- id (autoincrementing integer), name (string max length 50), user_id (integer)
 CREATE TABLE tasks (
     id SERIAL,
     name VARCHAR(50),
