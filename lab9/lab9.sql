@@ -1,4 +1,4 @@
---1.Sorted procedure increase_value
+--1.Stored procedure increase_value
 CREATE OR REPLACE FUNCTION increase_value(input_value INTEGER)
 RETURNS INTEGER AS $$
 BEGIN
